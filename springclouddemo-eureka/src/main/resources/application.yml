@@ -1,0 +1,15 @@
+server:
+  port: 18182
+  servlet:
+    context-path: /eureka
+spring:
+  application:
+    name: eureka-server
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://localhost:18182/eureka/eureka
+  instance:
+    hostname: localhost
+  server:
+    enable-self-preservation: false
